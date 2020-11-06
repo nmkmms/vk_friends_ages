@@ -3,7 +3,7 @@ import datetime
 from collections import defaultdict
 from json.decoder import JSONDecodeError
 
-
+USERNAME = 'nmkmms'
 URL = 'https://api.vk.com/method'
 ACCESS_TOKEN = 'fdfdb1ecfdfdb1ecfdfdb1ec0cfd897949ffdfdfdfdb1eca258cedc82af22a4ab2c5e12'
 VERSION = '5.71'
@@ -53,5 +53,5 @@ def get_friends(user_id):
 
 
 if __name__ == '__main__':
-    res = calc_age('reigning')
+    res = calc_age(USERNAME)
     print(res)
